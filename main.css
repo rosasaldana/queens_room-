@@ -1,11 +1,12 @@
 /* space between objs*/
 span {
-  margin: 60px;
+  margin: 40px;
 }
 
-.box {
- 
+span2 {
+  margin: 400px;
 }
+
 input[type=text]{
     width:30%;
     border:2px solid #e4e4e4;
@@ -28,7 +29,7 @@ input[type=text]{
 }
 
 .save-button {
-    display:block;
+    display: inline-block;
     width:150px;
     height:40px;
     line-height:40px;
@@ -42,7 +43,7 @@ input[type=text]{
 }
 
 .cancel-button {
-    display:block;
+    display: inline-block;
     width:100px;
     height:40px;
     line-height:40px;
@@ -56,6 +57,80 @@ input[type=text]{
 }
 .round-button:hover {
     background: #262626;
+}
+
+/** drop down menus **/
+/* The container must be positioned relative: */
+.custom-select {
+  border-color: #2196F3;
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+/* main display of drop down */
+.select-selected {
+  width: 200px;
+  border-color: #2196F3;
+  border-radius: 6px;
+  background-color: transparent;
+  line-height: 20px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 1210px;
+  width: 0;
+  height: 0;
+  border: 6px solid #2196F3;
+  border-color: #2196F3 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #2196F3 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+   width: 200px;
+   border-radius: 6px;
+  /*font color*/
+  /* border-color: #2196F3; */
+  color: #006fba ;
+  padding: 8px 16px;
+  /* border of drop down menu options */
+  border: 1.5px solid transparent;
+  /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  border-color: #2196F3 #2196F3 #2196F3 #2196F3;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  border-color: #2196F3;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 
