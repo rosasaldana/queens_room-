@@ -1,6 +1,6 @@
 /* space between objs*/
 span {
-  margin: 40px;
+  margin: 34px;
 }
 
 .center2 {
@@ -12,7 +12,7 @@ text-align: center;
 }
 
 input[type=text]{
-    width:30%;
+    width: 26%;
     border:2px solid #e4e4e4;
     border-radius:7px;
     margin:10px 0;
@@ -20,7 +20,6 @@ input[type=text]{
     padding:11px;
     box-sizing:border-box;
     transition:.3s;
-
     letter-spacing: -0.01em;
     font-size: 14px;
     font-weight: 400;
@@ -28,8 +27,9 @@ input[type=text]{
   }
 
   input[type=text]:focus{
-    border-color: #D3D3D3;
-    box-shadow:0 0 8px 0 #0000ff;
+    /*border color:  #D3D3D3 and box shadow #0000ff*/
+    border-color: #487596;
+    box-shadow:0 0 8px 0 #487596;
 }
 
 .save-button {
@@ -99,11 +99,12 @@ select {
 }
 /* Custom Select */
 .select {
-  left:250px; 
+  letter-spacing: -0.01em;
+  left:430px; 
   top:5px; 
   position: relative; 
   display: block;
-  width: 20em;
+  width: 15em;
   height: 3em;
   line-height: 3;
   background: #2c3e50;
@@ -111,6 +112,8 @@ select {
   border-radius: .25em;
 }
 select {
+  /** font size of buttons **/
+  font-size: 14px;
   color: #487596;
   width: 100%;
   height: 100%;
@@ -151,13 +154,17 @@ select::-ms-expand {
 }
 
 .btn {
-  border: 2px solid #006fba;
-  color: #006fba;
-  background-color: white;
+  border: 2px solid #487596;
+  color: white;
+  /*font color   color: #006fba; */
+  background-color:  #487596;
+  /* background-color: white; */
   padding: 8px 20px;
   border-radius: 8px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   width: 400px;
 }
 
