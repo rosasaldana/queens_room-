@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Profile Page</title>
+    <!-- linking to the css file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <div class="center2">
+      <input type="text" placeholder="First Name">
+      <span>
+      <input type="text" placeholder="Last Name">
+      </br>
+    </div>
+  
+    <!--GENDER DROP DOWN MENU -->
+      <div class="select">
+        <select name="slct" id="slct">
+          <option>Gender</option>
+          <option value="1">Female</option>
+          <option value="2">Male</option>
+        </select>
+      </div>
+    
+    </br>
+      <!--MARITAL DROP DOWN MENU -->
+      <div class="select">
+        <select name="slct" id="slct">
+          <option>Marital Status</option>
+          <option value="1">Single</option>
+          <option value="2">Married</option>
+          <option value="3">Divorced</option>
+          <option value="2">Widowed</option>
+        </select>
+      </div>
+
+  </br> 
+      <div class="select">
+        <select name="slct" id="slct">
+          <option>Personal Classification</option>
+          <option value="1">Employed</option>
+          <option value="2">Student</option>
+          <option value="3">Employed seeking and seeking new employment</option>
+          <option value="4">Unemployed seeking and seeking new employment</option>
+          <option value="5">Unemployed seeking and not seeking new employment </option>
+        </select>
+      </div>
+ 
+</br>
+    <!--Personal Self Care DOWN MENU -->
+    <div class="select">
+      <select name="slct" id="slct">
+        <option>Personal Selfcare Plan</option>
+        <option value="1">a</option>
+        <option value="2">b</option>
+        <option value="3">c</option>
+        <option value="4">d</option>
+      </select>
+    </div>
+
+    </br></br>
+    <div class="center2">
+    <a href="#" class="save-button">Save</a>
+    <span>
+    <a href="#" class="cancel-button">Cancel</a>
+    </div>
+
+  </body>
+</html>
+
