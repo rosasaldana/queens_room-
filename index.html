@@ -1,58 +1,103 @@
-<body>
-  <input type="text" placeholder="First Name">
-  <span> 
-  <input type="text" placeholder="Last Name">
-  </br>
-  
-  <div class="custom-select">
-    <select>
-      <option value="" disabled selected>Gender</option>
-      <option> Female </option>
-      <option> Male </option>
-    </select>
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Profile Page</title>
+    <!-- linking to the css file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <div class="center2">
+      <input type="text" placeholder="First Name">
+      <span>
+      <input type="text" placeholder="Last Name">
+      </br>
+    </div>
+
+    <div class="shift_right">
+    <!--GENDER DROP DOWN MENU -->
+    <label class="dropdown">
+      <div class="dd-button">
+        Gender
+      </div>
+      <input type="checkbox" class="dd-input" id="test">
+
+      <ul class="dd-menu">
+        <li>Female</li>
+        <li>Male</li>
+        <li class="divider"></li>
+      </ul>
+    </label>
+
+    </br>
+    <div class="button_space"> </div>
+
+    <!--MARITAL DROP DOWN MENU -->
+    <label class="dropdown">
+      <div class="dd-button">
+        Marital Status
+      </div>
+      <input type="checkbox" class="dd-input" id="test">
+
+      <ul class="dd-menu">
+        <li>Single</li>
+        <li>Married</li>
+        <li>Divorced</li>
+        <li>Widowed</li>
+        <li class="divider"></li>
+      </ul>
+    </label>
+    </br>
+    <div class="button_space"> </div>
+
+    <!--Personal Classification DOWN MENU -->
+    <label class="dropdown">
+      <div class="dd-button">
+        Personal Classification
+      </div>
+      <input type="checkbox" class="dd-input" id="test">
+
+      <ul class="dd-menu">
+        <li>Employed</li>
+        <li>Student</li>
+        <li> Employed seeking and seeking new employment</li>
+        <li> Unemployed seeking and seeking new employment </li>
+        <li> unemployed seeking and not seeking new employment </li>
+        <li class="divider"></li>
+      </ul>
+    </label>
+    </br>
+    <div class="button_space"> </div>
+
+    <!--Personal Self Care DOWN MENU -->
+
+    <label class="dropdown">
+      <div class="dd-button">
+        Personal Selfcare Plan
+      </div>
+      <input type="checkbox" class="dd-input" id="test">
+
+      <ul class="dd-menu">
+        <li> a </li>
+        <li> b </li>
+        <li> c </li>
+        <li> d </li>
+        <li class="divider"></li>
+      </ul>
+    </label>
+    </br>
   </div>
- 
-  </br>
 
-    <div class="custom-select">
-    <select>
-      <option value="" disabled selected>Marital Status</option>
-      <option> Single </option>
-      <option> Married </option>
-      <option> Divorced </option>
-      <option> Widowed </option>
-      </select>
-    </div>
+  <div class="button_space"> </div>
+  <div class="button_space"> </div>
+  <div class="center">
+    <span> <span>
+    <a href="#" class="save-button">Save</a>
+    <span>
+    <a href="#" class="cancel-button">Cancel</a>
+  </div>
 
-</br>
-
-  <div class="custom-select">
-    <select>
-      <option value="" disabled selected>Personal Classification</option>
-      <option> Employed </option>
-      <option> Student </option>
-      <option> Employed seeking and seeking new employment </option>
-      <option> Unemployed seeking and seeking new employment  </option>
-      <option> unemployed seeking and not seeking new employment </option>
-      </select>
-    </div>
-
-</br>
-
-  <div class="custom-select">
-    <select>
-      <option value="" disabled selected> Personal Selfcare Plan</option>
-      <option> a </option>
-      <option> b </option>
-      <option> c </option>
-      <option> d </option>
-      </select>
-    </div>
- 
-</br>
-<span2>
-  <a href="#" class="save-button">Save</a>
-  
-  <span>
-  <a href="#" class="cancel-button">Cancel</a>
-</body>
+  </body>
+</html>
