@@ -185,7 +185,7 @@ input[type=number]{
     border-radius:7px;
     margin:10px 0;
     outline:none;
-    padding:11px;
+    padding:12px;
     box-sizing:border-box;
     transition:.3s;
     letter-spacing: -0.01em;
@@ -201,5 +201,23 @@ input[type=number]{
     /*border color:  #D3D3D3 and box shadow #0000ff*/
     border-color: #487596;
     box-shadow:0 0 8px 0 #487596;
+}
+
+#children{
+    width: 16%;
+    border:2px solid #e4e4e4;
+    border-radius:7px;
+    margin:10px 0;
+    outline:none;
+    padding:12px;
+    box-sizing:border-box;
+    transition:.3s;
+    letter-spacing: -0.01em;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    transform: translate(-50%,-50%);
 }
 
