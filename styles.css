@@ -1,3 +1,4 @@
+
 /* space between objs*/
 span {
   margin: 34px;
@@ -152,7 +153,7 @@ select::-ms-expand {
   overflow: hidden;
   display: inline-block;
 }
-
+/*profile image button*/
 .btn {
   border: 2px solid #487596;
   color: white;
@@ -176,5 +177,29 @@ select::-ms-expand {
   opacity: 0;
 }
 
-/**button**/
+/**age button**/
+
+input[type=number]{
+    width: 16%;
+    border:2px solid #e4e4e4;
+    border-radius:7px;
+    margin:10px 0;
+    outline:none;
+    padding:11px;
+    box-sizing:border-box;
+    transition:.3s;
+    letter-spacing: -0.01em;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 23%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+  }
+
+  input[number=text]:focus{
+    /*border color:  #D3D3D3 and box shadow #0000ff*/
+    border-color: #487596;
+    box-shadow:0 0 8px 0 #487596;
+}
 
