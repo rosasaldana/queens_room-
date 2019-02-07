@@ -180,7 +180,7 @@ select::-ms-expand {
 /**age button**/
 
 input[type=number]{
-    width: 16%;
+    width: 14%;
     border:2px solid #e4e4e4;
     border-radius:7px;
     margin:10px 0;
@@ -193,7 +193,7 @@ input[type=number]{
     font-weight: 400;
     position: absolute;
     top: 23%;
-    left: 58%;
+    left: 57%;
     transform: translate(-50%,-50%);
   }
 
@@ -204,7 +204,7 @@ input[type=number]{
 }
 
 #children{
-    width: 16%;
+    width: 14%;
     border:2px solid #e4e4e4;
     border-radius:7px;
     margin:10px 0;
@@ -216,8 +216,8 @@ input[type=number]{
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    top: 35%;
-    left: 58%;
+    top: 34%;
+    left: 57%;
     transform: translate(-50%,-50%);
 }
 
